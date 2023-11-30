@@ -16,7 +16,7 @@ const maxSSTFiles = 10
 
 func main() {
 	// Create a WriteAheadLog
-	wal, err := NewWriteAheadLog("waljdid16.log")
+	wal, err := NewWriteAheadLog("newal.log")
 	watermarkPosition := int64(50)
 	if err != nil {
 		log.Fatal(err)
