@@ -1,0 +1,18 @@
+# Setting a key-value pair
+POST http://localhost:8080/set
+Content-Type: application/json
+
+{
+  "key": "example_key2",
+  "value": "example_value2"
+}
+
+# Getting a value by key
+GET http://localhost:8080/get?key=example_key
+
+# Deleting a value by key
+DELETE  http://localhost:8080/del?key=example_key
+
+
+# Getting all key-value pairs
+GET http://localhost:8080/getall
